@@ -3,7 +3,6 @@ import fotoRohan from './assets/Rohan.jpeg';
 
 const ProfilRohan = () => {
   return (
-    /* PERUBAHAN DI SINI: Tambahkan h-screen, overflow-y-auto, dan scroll-smooth */
     <div className="h-screen overflow-y-auto scroll-smooth bg-[#0a0a0c] text-white font-sans tracking-tight relative">
       
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#1c1c21_0%,_#0a0a0c_100%)]"></div>
@@ -11,9 +10,33 @@ const ProfilRohan = () => {
 
       <nav className="fixed top-0 w-full z-50 border-b border-white/5 bg-[#0a0a0c]/80 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
-          <div className="text-sm font-black tracking-[0.4em] uppercase">
+            
+          <div className="flex items-center gap-4">
+        <button 
+            onClick={() => window.location.href = '/'} 
+                className="p-2 hover:bg-white/10 rounded-full transition-colors group"
+                    title="Back to Home"
+        >
+            <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="18" 
+                height="18" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2.5" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                className="text-slate-400 group-hover:text-white transition-transform group-hover:-translate-x-0.5"
+            >
+            <path d="m15 18-6-6 6-6"/>
+            </svg>
+        </button>
+
+        <div className="text-sm font-black tracking-[0.4em] uppercase">
             Rohan's Profile<span className="text-indigo-500">.</span>
-          </div>
+        </div>
+        </div>
           <div className="hidden md:flex gap-10 text-[10px] font-black uppercase tracking-widest text-slate-400">
             <a href="#about" className="hover:text-white transition-colors">About</a>
             <a href="#corefocus" className="hover:text-white transition-colors">Core Focus</a>
