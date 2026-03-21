@@ -15,6 +15,18 @@ function App() {
               className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all hover:scale-105"
             >
               Profil Rohan
+            </Link> <br />
+            <Link 
+              to="/ammar" 
+              className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all hover:scale-105"
+            >
+              Profil Ammar
+            </Link> <br />
+            <Link 
+              to="/arva" 
+              className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all hover:scale-105"
+            >
+              Profil Arva
             </Link>
           </div>
         } />
