@@ -10,13 +10,27 @@ function ProfilArva() {
       <nav className="fixed top-0 w-full z-50 border-b border-white/5 bg-[#09090b]/80 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <Link
-              to="/"
-              className="inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-2 text-[10px] font-black uppercase tracking-[0.3em] text-sky-200 transition-colors hover:border-sky-300/60 hover:bg-sky-400/20 hover:text-white"
+            <button
+              onClick={() => (window.location.href = "/")}
+              className="p-2 hover:bg-white/10 rounded-full transition-colors group"
+              title="Back to Home"
             >
-              <span aria-hidden="true">&lt;-</span>
-              <span>Kembali ke Home</span>
-            </Link>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-slate-400 group-hover:text-white transition-transform group-hover:-translate-x-0.5"
+              >
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+            </button>
+            
             <div className="text-sm font-black tracking-[0.4em] uppercase">
               Arva's Profile<span className="text-sky-400">.</span>
             </div>
