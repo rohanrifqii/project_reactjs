@@ -10,8 +10,6 @@ function ProfilRohan() {
 
       <nav className="fixed top-0 w-full z-50 border-b border-white/5 bg-[#0a0a0c]/80 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
-<<<<<<<< HEAD:src/ProfilRohan.jsx
-            
           <div className="flex items-center gap-4">
         <button 
             onClick={() => window.location.href = '/'} 
@@ -38,20 +36,6 @@ function ProfilRohan() {
             Rohan's Profile<span className="text-indigo-500">.</span>
         </div>
         </div>
-========
-          <div className="flex items-center gap-4">
-            <Link
-              to="/"
-              className="inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-indigo-400/10 px-4 py-2 text-[10px] font-black uppercase tracking-[0.3em] text-indigo-200 transition-colors hover:border-indigo-300/60 hover:bg-indigo-400/20 hover:text-white"
-            >
-              <span aria-hidden="true">&lt;-</span>
-              <span>Kembali ke Home</span>
-            </Link>
-            <div className="text-sm font-black tracking-[0.4em] uppercase">
-              Rohan's Profile<span className="text-indigo-500">.</span>
-            </div>
-          </div>
->>>>>>>> ca59d6ce6066baa860c93ada41257d701fcea248:src/page/ProfilRohan.tsx
           <div className="hidden md:flex gap-10 text-[10px] font-black uppercase tracking-widest text-slate-400">
             <a href="#about" className="hover:text-white transition-colors">About</a>
             <a href="#corefocus" className="hover:text-white transition-colors">Core Focus</a>
@@ -129,7 +113,7 @@ function ProfilRohan() {
           </section>
 
           <section id="corefocus" className="space-y-8 scroll-mt-32">
-            <span className="text-[10px] font-black text-indigo-400 uppercase tracking-widest">Core Focus</span>
+            <span className="text-[10px] font-black text-indigo-400 uppercase tracking-widest">Core Focus</span><br /><br />
             <div className="grid grid-cols-2 gap-4 font-black uppercase tracking-[0.2em] text-[9px]">
               {['IT Project Management', 'SDLC Strategy', 'Team Collaboration', 'Digital Strategy'].map((item) => (
                 <div key={item} className="p-4 border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] transition-colors rounded-xl flex items-center gap-3">
