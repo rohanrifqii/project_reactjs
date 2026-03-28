@@ -15,7 +15,7 @@ function App() {
               <br />
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/rohan" className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all hover:scale-105 text-center">
+                <Link to="/rohan" className="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all hover:scale-105 text-center">
                   Profil Rohan
                 </Link>
                 <Link to="/arva" className="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all hover:scale-105 text-center">

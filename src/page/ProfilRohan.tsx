@@ -3,11 +3,15 @@ import fotoRohan from "../assets/Rohan.jpeg";
 
 function ProfilRohan() {
   return (
-    <div className="h-screen overflow-y-auto scroll-smooth bg-[#0a0a0c] text-white font-sans tracking-tight relative">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#1c1c21_0%,_#0a0a0c_100%)]"></div>
-      <div className="absolute top-[-10%] left-[-5%] w-[40%] h-[40%] bg-indigo-500/5 rounded-full blur-[120px]"></div>
+    <div className="h-screen overflow-y-auto scroll-smooth bg-[#040814] text-white font-sans tracking-tight relative overflow-x-hidden">
+      
+      <div className="fixed top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-blue-600/20 blur-[120px] pointer-events-none z-0"></div>
+      <div className="fixed bottom-[-15%] right-[-5%] w-[50vw] h-[50vw] rounded-full bg-cyan-500/15 blur-[150px] pointer-events-none z-0"></div>
+      <div className="fixed top-[30%] left-[30%] w-[30vw] h-[30vw] rounded-full bg-indigo-500/10 blur-[100px] pointer-events-none z-0"></div>
+      
+      <div className="fixed top-[-20%] right-[-10%] w-[60vw] h-[60vw] rounded-full border border-blue-500/5 -rotate-12 pointer-events-none z-0"></div>
 
-      <nav className="fixed top-0 w-full z-50 border-b border-white/5 bg-[#0a0a0c]/80 backdrop-blur-md">
+      <nav className="fixed top-0 w-full z-50 border-b border-white/5 bg-[#040814]/70 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <button
@@ -31,22 +35,22 @@ function ProfilRohan() {
               </svg>
             </button>
 
-        <div className="text-sm font-black tracking-[0.4em] uppercase">
-            Rohan's Profile<span className="text-indigo-500">.</span>
-        </div>
-        </div>
+            <div className="text-sm font-black tracking-[0.4em] uppercase">
+              Rohan's Profile<span className="text-indigo-500">.</span>
+            </div>
+          </div>
           <div className="hidden md:flex gap-10 text-[10px] font-black uppercase tracking-widest text-slate-400">
             <a href="#about" className="hover:text-white transition-colors">
               About
+            </a>
+            <a href="#identity" className="hover:text-white transition-colors">
+              Identity
             </a>
             <a href="#corefocus" className="hover:text-white transition-colors">
               Core Focus
             </a>
             <a href="#vision" className="hover:text-white transition-colors">
               Vision
-            </a>
-            <a href="#contact" className="hover:text-white transition-colors">
-              Contact
             </a>
           </div>
         </div>
@@ -80,7 +84,7 @@ function ProfilRohan() {
             <h1 className="text-5xl lg:text-7xl font-extralight text-white tracking-tighter leading-none uppercase">
               Muhammad
               <br />
-              <span className="font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-500">
+              <span className="font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-indigo-400">
                 Rohan
               </span>{" "}
               Rifqi
@@ -90,12 +94,18 @@ function ProfilRohan() {
             </p>
 
             <div className="flex gap-4 pt-4 justify-center md:justify-start">
-              <button className="px-8 py-3 bg-white text-black text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-slate-200 transition-all">
-                GitHub
-              </button>
-              <button className="px-8 py-3 border border-white/10 text-white text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-white/5 transition-all">
-                Message
-              </button>
+              <a
+                href="#about"
+                className="px-8 py-3 bg-white text-black text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-slate-200 transition-all"
+              >
+                Explore
+              </a>
+              <a
+                href="#identity"
+                className="px-8 py-3 border border-white/10 text-white text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-white/5 transition-all"
+              >
+                Identity
+              </a>
             </div>
           </div>
         </div>
@@ -109,49 +119,73 @@ function ProfilRohan() {
               <div className="h-[1px] flex-grow bg-gradient-to-r from-white/20 to-transparent"></div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              <div className="space-y-4">
-                <span className="text-[10px] font-black text-indigo-400 uppercase tracking-widest">
-                  Bio
+            <div className="space-y-4">
+              <span className="block mb-3 text-[10px] font-black text-indigo-400 uppercase tracking-widest">
+                Bio & Goals
+              </span>
+              <p className="text-sm leading-relaxed text-slate-400 text-justify font-medium">
+                Halo! Saya Rohan, mahasiswa <span className="text-white font-bold italic">Teknologi Informasi</span> yang memiliki antusiasme tinggi dalam mengelola siklus pengembangan perangkat lunak dan strategi digital. Saya menikmati proses belajar teknologi modern seperti ReactJS dan Tailwind CSS untuk menciptakan solusi yang tepat guna.
+                Cita-cita saya adalah menjadi seorang <span className="text-white font-bold decoration-indigo-500">Project Manager IT</span> yang profesional. Saya percaya kesuksesan produk digital bergantung pada manajemen tim yang solid, komunikasi efektif, dan perencanaan strategi yang matang.
+              </p>
+            </div>
+          </section>
+
+          <section id="identity" className="space-y-8 scroll-mt-32">
+            <span className="block mb-3 text-[10px] font-black text-indigo-400 uppercase tracking-widest">
+              Identity
+            </span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="p-5 border border-white/5 bg-white/[0.02] rounded-2xl">
+                <span className="text-[10px] font-black tracking-[0.3em] uppercase text-slate-500">
+                  Nama
                 </span>
-                <p className="text-sm leading-relaxed text-slate-400 text-justify font-medium">
-                  Halo! Saya Rohan, mahasiswa{" "}
-                  <span className="text-white font-bold italic">
-                    Teknologi Informasi
-                  </span>{" "}
-                  yang memiliki antusiasme tinggi dalam mengelola siklus
-                  pengembangan perangkat lunak dan strategi digital. Saya
-                  menikmati proses belajar teknologi modern seperti ReactJS dan
-                  Tailwind CSS untuk menciptakan solusi yang tepat guna.
+                <p className="mt-3 text-lg font-semibold text-white">
+                  Muhammad Rohan Rifqi
                 </p>
               </div>
-
-              <div className="space-y-4">
-                <span className="text-[10px] font-black text-indigo-400 uppercase tracking-widest">
-                  Goals
+              <div className="p-5 border border-white/5 bg-white/[0.02] rounded-2xl">
+                <span className="text-[10px] font-black tracking-[0.3em] uppercase text-slate-500">
+                  NIM
                 </span>
-                <br />
-                <p className="text-sm leading-relaxed text-slate-400 text-justify font-medium">
-                  Cita-cita saya adalah menjadi seorang{" "}
-                  <span className="text-white font-bold underline decoration-indigo-500 underline-offset-8">
-                    Project Manager IT
-                  </span>{" "}
-                  yang profesional. Saya percaya kesuksesan produk digital
-                  bergantung pada manajemen tim yang solid, komunikasi efektif,
-                  dan perencanaan strategi yang matang.
+                <p className="mt-3 text-lg font-semibold text-white">
+                  253140701111059
                 </p>
+              </div>
+              <div className="p-5 border border-white/5 bg-white/[0.02] rounded-2xl">
+                <span className="text-[10px] font-black tracking-[0.3em] uppercase text-slate-500">
+                  Kelas
+                </span>
+                <p className="mt-3 text-lg font-semibold text-white">T2D</p>
+              </div>
+              <div className="p-5 border border-white/5 bg-white/[0.02] rounded-2xl">
+                <span className="text-[10px] font-black tracking-[0.3em] uppercase text-slate-500">
+                  Jurusan
+                </span>
+                <p className="mt-3 text-lg font-semibold text-white">
+                  Teknologi Informasi
+                </p>
+              </div>
+              <div className="p-5 border border-white/5 bg-white/[0.02] rounded-2xl sm:col-span-2">
+                <span className="text-[10px] font-black tracking-[0.3em] uppercase text-slate-500">
+                  Domisili
+                </span>
+                <p className="mt-3 text-lg font-semibold text-white">Banjarbaru</p>
               </div>
             </div>
           </section>
 
           <section id="corefocus" className="space-y-8 scroll-mt-32">
-            <span className="text-[10px] font-black text-indigo-400 uppercase tracking-widest">Core Focus</span><br /><br />
-            <div className="grid grid-cols-2 gap-4 font-black uppercase tracking-[0.2em] text-[9px]">
+            <span className="block mb-3 text-[10px] font-black text-indigo-400 uppercase tracking-widest">
+              Core Focus
+            </span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-black uppercase tracking-[0.2em] text-[9px]">
               {[
                 "IT Project Management",
                 "SDLC Strategy",
                 "Team Collaboration",
+                "Web Development",
                 "Digital Strategy",
+                "IT Network",
               ].map((item) => (
                 <div
                   key={item}
@@ -169,7 +203,7 @@ function ProfilRohan() {
             className="relative p-10 rounded-[2.5rem] overflow-hidden group border border-white/5 bg-white/[0.02] scroll-mt-32"
           >
             <div className="relative z-10 space-y-4">
-              <span className="text-[10px] font-black text-indigo-400 uppercase tracking-widest italic">
+              <span className="block mb-3 text-[10px] font-black text-indigo-400 uppercase tracking-widest italic">
                 Vision
               </span>
               <p className="text-3xl lg:text-5xl font-extralight leading-[1.1] text-white tracking-tighter">
@@ -180,10 +214,7 @@ function ProfilRohan() {
             </div>
           </section>
 
-          <footer
-            id="contact"
-            className="flex justify-between items-end pt-12 border-t border-white/5 opacity-30 scroll-mt-32"
-          >
+          <footer className="flex justify-between items-end pt-12 border-t border-white/5 opacity-40">
             <div className="text-[9px] font-black tracking-[0.3em] uppercase">
               Location / Banjarbaru, ID
             </div>
